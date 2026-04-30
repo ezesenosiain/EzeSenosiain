@@ -72,3 +72,13 @@ next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
 
 setInterval(nextSlide, 5000);
+
+const form = document.querySelector('.contact__form');
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    alert('Mensaje enviado (demo)');
+
+    form.reset();
+});

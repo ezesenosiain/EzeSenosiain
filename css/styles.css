@@ -357,6 +357,80 @@ main {
   border-radius: 8px;
 }
 
+.hero--map {
+  height: 70vh;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  filter: grayscale(20%) contrast(1.1);
+}
+
+.hero--map::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.2);
+}
+
+.contact {
+  margin: 40px 0;
+}
+
+.contact__container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contact__form input,
+.contact__form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #CCCCCC;
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.95rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact__form input:focus,
+.contact__form textarea:focus {
+  outline: none;
+  border-color: #00CC88;
+  box-shadow: 0 0 0 2px rgba(0, 204, 136, 0.2);
+}
+
+.contact__form textarea {
+  resize: vertical;
+}
+
+.contact__form button {
+  height: 48px;
+  background-color: #00CC88;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact__form button:hover {
+  background-color: #00E699;
+}
+
 .footer {
   background-color: #5E5E5E;
   padding: 0.5rem 0;
