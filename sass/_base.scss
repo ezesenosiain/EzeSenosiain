@@ -1,3 +1,5 @@
+@use 'variables' as*;
+
 html,
 body {
   height: 100%;
@@ -27,11 +29,11 @@ h3 {
 p {
   font-size: 0.95rem;
   line-height: 1.5;
-  color: #111111;
+  color: $navbar-color;
 }
 
 .navbar {
-  background-color: #111111;
+  background-color: $navbar-color;
   height: 4rem;
   padding: 0 2.5rem;
   display: flex;
@@ -74,7 +76,7 @@ p {
 }
 
 .navbar__menu a:hover {
-  color: #66FFCC;
+  color: $hover-color;
 }
 
 .navbar__toggle {
@@ -129,7 +131,7 @@ main {
 .hero__overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -250,7 +252,7 @@ main {
   display: block;
   width: 100%;
   height: 48px;
-  background-color: #00CC88;
+  background-color: $primary-color;
   color: #FFFFFF;
   text-decoration: none;
   border-radius: 8px;
@@ -259,7 +261,7 @@ main {
 }
 
 .gallery-card__button:hover {
-  background-color: #00E699;
+  background-color: $hover-color;
 }
 
 .lightbox {
@@ -375,7 +377,7 @@ main {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 .contact {
@@ -408,7 +410,7 @@ main {
 .contact__form input:focus,
 .contact__form textarea:focus {
   outline: none;
-  border-color: #00CC88;
+  border-color: $primary-color;
   box-shadow: 0 0 0 2px rgba(0, 204, 136, 0.2);
 }
 
@@ -418,7 +420,7 @@ main {
 
 .contact__form button {
   height: 48px;
-  background-color: #00CC88;
+  background-color: $primary-color;
   color: #FFFFFF;
   border: none;
   border-radius: 8px;
@@ -428,11 +430,11 @@ main {
 }
 
 .contact__form button:hover {
-  background-color: #00E699;
+  background-color: $hover-color;
 }
 
 .footer {
-  background-color: #5E5E5E;
+  background-color: $footer-color;
   padding: 0.5rem 0;
   display: flex;
   justify-content: center;
@@ -458,7 +460,7 @@ main {
 
 .footer__icon:hover {
   background-color: #FFFFFF;
-  color: #5E5E5E;
+  color: $footer-color;
 }
 
 @media (max-width: 1024px) {
@@ -490,7 +492,7 @@ main {
     top: 3.5rem;
     left: 0;
     width: 100%;
-    background-color: #111111;
+    background-color: $navbar-color;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
@@ -520,10 +522,10 @@ main {
   }
 
   .gallery__grid {
-  grid-template-columns: 1fr;
-  gap: 24px;
-  padding: 0 1.5rem;
-}
+    grid-template-columns: 1fr;
+    gap: 24px;
+    padding: 0 1.5rem;
+  }
 
   .history__bio {
     flex-direction: column;
@@ -535,5 +537,3 @@ main {
     grid-template-columns: 1fr;
   }
 }
-
-
